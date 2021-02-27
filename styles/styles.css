@@ -6,6 +6,7 @@
     --cyan: hsl(179, 62%, 43%);
     --ltcyan: hsl(179, 61%, 48%);
     --yellow: hsl(71, 73%, 54%);
+    --ltyellow: hsl(71, 73%, 60%);
     --ltgray: hsl(204, 43%, 93%);
     --grayblue: hsl(218, 22%, 67%);
     --white: rgb(255,255,255);
@@ -19,7 +20,13 @@ h1, h2, ul, li, p, span, a{
 body{
     background: var(--white);  
     text-align: left;
+    height:100vh;
 
+}
+
+main{
+    /* max-width: 1060px; */
+    margin: 0 auto;
 }
 
 ul{
@@ -46,7 +53,7 @@ h2{
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto auto;
-        height:100vh;
+        
     }
 
     ul li{
@@ -132,6 +139,10 @@ h2{
     margin-top: 31px;
 }
 
+.subs a:hover{
+    background: var(--ltyellow);
+}
+
 @media only screen and (min-width:992px){
     .subs{
     }
@@ -158,4 +169,8 @@ h2{
     line-height: 1.3;
 }
 
+footer{
+    padding: 10px;
+    background: pink;
 
+}
